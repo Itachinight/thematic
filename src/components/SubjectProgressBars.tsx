@@ -15,9 +15,9 @@ const SubjectProgressBars: FC<SubjectProgressBarContainerProps> = (props: Subjec
         visitedPercentage,
         doneTestsPercentage,
         doneHwPercentage,
+        totalMark
     } = props;
 
-    const totalMark = Number.isFinite(props.totalMark) ? props.totalMark : 0;
     const visitedColor = getCounterColor(visitedPercentage);
     const testsColor = getCounterColor(doneTestsPercentage);
     const hwColor = getCounterColor(doneHwPercentage);

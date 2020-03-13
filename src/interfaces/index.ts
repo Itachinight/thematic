@@ -70,6 +70,7 @@ interface CommonThematicInfo {
     dateStartLearning: string
     defaultOpened: number
     themes: Theme[]
+    mark: number
 }
 
 export interface ThematicInfo extends CommonThematicInfo {

@@ -85,25 +85,12 @@ class App extends Component<{}, ThematicState> {
             studentFiles: [],
             teacherFiles: [],
             commentary: ''
-        }
+        },
+        mark: 0
     };
 
     private today = moment();
     private translation = getTranslation(this.state.lang);
-
-    getSubjectMark(): number {
-        let evaluatedThemesCount = 0;
-        let themeMarksSum = 0;
-
-        for (const {mark} of this.state.themes) {
-            if (mark !== null) {
-                evaluatedThemesCount++;
-                themeMarksSum += mark;
-            }
-        }
-
-        return evaluatedThemesCount !== 0 ? Math.round(themeMarksSum / evaluatedThemesCount) : Infinity;
-    }
 
     handleArchiveChange = async (value: ValueType<Archive>, action: ActionMeta): Promise<void> => {
         if (action.action === 'select-option') {
@@ -527,7 +514,7 @@ class App extends Component<{}, ThematicState> {
                             visitedPercentage={this.state.visitedPercentage}
                             doneHwPercentage={this.state.doneHwPercentage}
                             doneTestsPercentage={this.state.doneTestsPercentage}
-                            totalMark={this.getSubjectMark()}
+                            totalMark={this.state.mark}
                         />
                         }
                     </div>

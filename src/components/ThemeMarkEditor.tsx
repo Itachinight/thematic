@@ -22,16 +22,6 @@ class ThemeMarkEditor extends Component<ThemeMarkEditorProps, ThemeMarkEditorSta
         }
     };
 
-    // static getDerivedStateFromProps(props: ThemeMarkEditorProps, prevState: ThemeMarkEditorState): ThemeMarkEditorState | null {
-    //     if (props.mark === prevState.localThemeMark) {
-    //         return null;
-    //     }
-    //
-    //     return {
-    //         localThemeMark: props.mark
-    //     }
-    // }
-
     editTestMarkWrapper = (event: KeyboardEvent<HTMLInputElement>): void => {
         if (event.key !== 'Enter') {
             return;
