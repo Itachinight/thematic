@@ -1,11 +1,891 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8934a64b-86aa-4aa8-b540-55e78f8987ae" name="Default Changelist" comment="Initial">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/silex-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ArchiveLessonRow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ArchiveThemeTable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GlobalContext.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/IconLink.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LessonRow.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MarksContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MarksPopUp.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SelectControls.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SelectedUserInfo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SubjectProgressBars.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ThemeMarkEditor.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ThemeTable.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/HwDoneIconSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/HwIconSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/MarkIconSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/TestIconSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/TestResetIconSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/ThemeOpenSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/icons/VideoIconSvg.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/CRC35.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/Circe-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/localization/getTranslation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/requests/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-ExtraBold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-ExtraBold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-ExtraBold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-ExtraLight.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-ExtraLight.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-ExtraLight.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/Circe-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/transfonter.org-20180706-085431/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_css/fonts/transfonter.org-20180706-085431/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/19b24ad5b1dc2439317dc6cf90b7d3ef.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/1_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/2_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/3_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/4_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/5_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/6_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/7_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/8_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/9_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/9ff8cdbac96ae491f9b54ad4b7725e33.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/about/battery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/about/doctor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/about/sport.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/about/swords.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/about/trophy-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/about/trophy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/about/ukraine.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/admin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/administrators/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/administrators/1_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/administrators/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/administrators/2_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/administrators/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/administrators/3_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/administrators/shpak.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/administrators/shpak_2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/administrators/suprun_600x400.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/icon-access.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/icon-archive.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/icon-arrows.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/icon-book-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/icon-book.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/icon-chat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/icon-hourglass.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/icon-smile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/icon-test.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/icon-trophy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/language.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/monitor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/old/distance_learning.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/old/free_schedule.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/old/full_edu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/old/languages.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/pen-test.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/students-cap.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/advantages/video-lecture.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/arrow_m.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/arrw_bot_ol.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/arrw_bot_ol2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/atestat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/b_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/bg_tp_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/block_8_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/block_8_home_ua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/book--.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/book-.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/book.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/bukva_a5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/bukva_a6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/bukva_a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/bukva_e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/bukva_f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/bukva_g.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/c11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/c22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/c33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cancel-cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/checked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/christmas/bgs.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/christmas/chr1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/christmas/chr2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka_a1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka_a2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka_a3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka_a4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka_b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka_c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/cletka_d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/coomp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/course_calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/course_dz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/course_events.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/course_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/course_messages.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/course_plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/damas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ellem_div1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ellem_div2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ellem_div3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ellem_div4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ellem_div5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ellem_div6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ellem_div7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ellem_div8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ellem_div9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-aug/extern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/bg-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/bg-white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/functions.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/key.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/key.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/landing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/landing.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/lesson-new.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/lesson.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/lesson.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/lock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/magnifier.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/magnifier.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/mobile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/par_stat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/par_stats.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/par_stats.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/print.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/scale.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/scale.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/tests.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/tests.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/trophy-new.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/trophy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/trophy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/video-new.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/emails/2019-june/video.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/english.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/exclamation-sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/facebook-b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/file_icons/archive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/file_icons/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/file_icons/doc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/file_icons/gif.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/file_icons/img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/file_icons/mp3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/file_icons/mp4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/file_icons/pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/file_icons/ppt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/file_icons/txt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/file_icons/xls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/handMade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/header_bgg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/help-button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/holidays/english_lang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/holidays/hand-made.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/holidays/journalistic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/holidays/math.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/holidays/photoshop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/holidays/science.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/homes.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/homework_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/homework_up1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_to_enter/pencil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_to_enter/school_build.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_to_enter/tutor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/calendar-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/chat-1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/chat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/chat_rus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/chat_ukr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/classic-a.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/classic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/diary_rus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/diary_ukr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/homework-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/homework.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/hw_rus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/hw_ukr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/info-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/journal_rus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/journal_ukr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/lesson_rus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/lesson_ukr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/list-a.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/main_rus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/main_ukr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/more_rus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/more_ukr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/open-book.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/play-button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/sait.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/star-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/teacher-2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/teacher-3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/teacher.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/test.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/test_rus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/test_ukr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/text-document.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/text-documents.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/verified-text-paper.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/writing.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/how_we_study/written-page.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icon1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icon2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/address.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/answer-false.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/answer-true.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/answer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/arrow-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/arrow_nav.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/attach.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/book.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/book_blue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/classic-a.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/classic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/clock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/close_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/course.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/email.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/homework_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/homework_2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/hw_on_review.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/hw_send_check.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/icon_hw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/icon_test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/info_blue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/inform.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/journal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/key.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/key_blue.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/lesson — копия.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/lesson.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/list-a.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/list.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/logo_1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/logo_2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/logo_3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/messages.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/no_hw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/notation_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/notation_icon_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/notification.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/ok_icon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/print — копия.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/print.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/question.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/result_calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/result_mark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/result_max.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/result_time.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/russia.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/send.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/show_answers — копия.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/show_answers.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/show_hints — копия.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/show_hints.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/skype.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/telephone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/tools.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/try_again — копия.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/try_again.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/ukraine.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/undone_test.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/unsend_hw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/verbal_hw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/video — копия.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/icons/video.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_52.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_body_6_inner_62.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_head_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/index_head_h3_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/info--.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/info-.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/journal_loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/journalistics.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/caret-symbol.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/chat-message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/chat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/clips.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/comp_keyboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/comp_mouse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/english.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/fb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/founders.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/geography.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/globe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/headphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/icon-chat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/inst.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/lecture.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/logo-main.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/logo_ny.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/logo_ny_mini.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/pencil_holder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/ruler.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/shev.cdr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/shev.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/test.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/viber.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/video-lecture.cdr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/video-lecture.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/video.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/youtube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/landing/youtube.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/language.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/left_cal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/0b8dbb2f975f6989a54b6ae32966183a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/0cb8f0b3806596605dc7e0050679826a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/0e767b9570108dc671dff8f39c405c6c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/10382e2740bb29c062d116dc31251276.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/13c4f3d68f2fea6eba95f3c4ea5b2a20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/172e0cc0d35ec5a2e765bfc7bd9e5a14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/1b9c445aa022f3d5e0fa2cc66eafbfdb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/25da19de757f577768fa83fef5cd4d71.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/27504330f80150b5856a4b01268b3d12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/2feda9636656d454e6227a416ef54717.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/313a1d791e4f9439feba5f69b9d98d32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/31bf38843719117cbf4ebeddf213b4ce.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/3315f54c4ab8a3f6844d33248aa72f17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/38169636576f939d9e6bad9d50912e37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/381d7eb1cbd025c197c8d5f04cce0c61.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/39512fefc2fbd9a23aa5afd4a7f6afbc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/3a8dfb5a6ad5b3695fb665145f5c3b08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/3c55db75f5b47f30ae2bd2e30c712693.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/3ec2e64a864a92b63eb3097c99457913.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/3faea5c7e3783c11913834c5acae7cf4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/44710ef1ef9c4bbbc1c602aae9028070.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/46b82aad012c72c7479ddba0cbbb138c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/47abef018a5861339e282e33a48a5c9c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/4e97aad9c42d54b2b9957cd81ff40615.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/58bcc76d10c940503d32f1ca38a03404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/61318b08aef032ae5810f83cfad4e99b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/6ee44c1b9d4b09b45849d203e478c22d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/710c791407342d34eb2fee3c6d48b5cc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/75b19632ff9dbe257f3ecdb7520c447c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/7c002b1c3a938abed6a9244229a0fcc9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/7f33ac6f6686146626beb9b8a8520980.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/856d7d6385aa0e3b35ff26f1911dac94.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/92aa146ee1dce06780329114b65d5e6f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/97dbea7fcae29f771643868dc6ac7e0b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/9bee5baa4372ac263c7777ce1baad6e1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/9fa7616d24dbd0f28c3c5a46bdbc6050.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/a8e18494a89de5105f7022c97744ded6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/aff6ec40002a6b7cab5a6e0a1e36c54c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/algebra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/art-culture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/arts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/astronomy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/bb384bf3b87038f0f170617294583117.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/biology.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/c06c81fe3cadcf5b1f4fd8a4e6ea8a96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/c5a6fad0fe9a0afdb62a4b944c678080.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/c73aa17eee04a8a36a0e7315dab9a534.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/cd908beae0c3ea2fb46bb1c6be45670d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/ce803dac5b1db5d1aa2e6a728dafb0e7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/cff87c822c1c0f755f84c5775cef8e8d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/chemisty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/comp-science.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/comp_des.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/d466598e181b667b437650a37712116c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/dc68fdf04334c81a2d4251bf1fda8817.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/dde07f347ba9b884df6748f55ad5229d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/des&amp;tech.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/dpu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/ecology.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/economy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/ee5f6e43433af5bc7d8f21a7d5e52ea1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/english.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/english_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/f28f5f89ae174d5e516696452c0cf741.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/f71fc661d30115ee507aa3054a523cf7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/fa740bf8f3c43e19ffb6cedde1aa4b96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/geography.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/geometry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/handmade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/health.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/human-and-world.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/journalistic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/jurisprudence.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/lit-reading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/math.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/math_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/nature-study.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/physic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/science.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/soc_edu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/steps-to-comp-science.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/ukr-history.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/ukr-lang-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/ukr-lang.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/ukr-lit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/world-and-i.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/world-history.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lesson_icons/world-lit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/lider_block7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/line_block7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/line_block7_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/loading-01.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/logo-mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/logo_full_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/main-images/avataaars.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/main-images/avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/main-images/noava.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/main-images/noavatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/main-images/noavatar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mapper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/math.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/min_log.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini-stats/stats-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini-stats/test.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini-stats/ukraine.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini-stats/video-lecture.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini_icons/arrow-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini_icons/arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini_icons/check-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini_icons/circle-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini_icons/circle_minus_mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini_icons/oncheck_hw_mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini_icons/onrevision_hw_mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini_icons/plus-circle-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini_icons/times-circle-solid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini_icons/undone_hw_mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/mini_icons/undone_test_mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/monitor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/new_images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/no_video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/no_video_ua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/notification.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/o_ss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/offers/books.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/offers/medal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/offers/mortarboard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/otziv-foto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/pancil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/bad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/good.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/notbad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/perfect.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/bad_knowledge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/bad_marks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/done_test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/icon_hw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/icon_test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/lessons_done.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/lessons_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/message_get.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/message_read.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/message_send.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/message_unread.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/not_read_checked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/notation_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/notation_icon_hover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/notif.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/oncheck_hw_mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/onrevision_hw_mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/rec_done.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/rec_hw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/rec_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/rec_watch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/send_edit_hw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/send_uncheck_hw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/term_performance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/training_done_test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/training_undone_test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/undone-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/undone_hw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/undone_hw_all.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/undone_hw_mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/undone_test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/undone_test_mini.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/unsee_check_hw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/unsee_check_hw_edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/parents_stats/stats_icons/watched_video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/pen-test.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/pluss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/preload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/price/icon-certificate.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/price/icon-chart-pieces.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/price/icon-chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/price/icon-tutor.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/price/icon-tutor1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/progress_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/question.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/right-spoiler-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/right_cal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/rus_aa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/russia.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/science.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/shedule-progress-texture.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/social/fb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/social/inst.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/social/twitter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/social/youtube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/sort-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/students-cap.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/system_users.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/bandura.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/belozerova.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/bondar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/chornaya.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/golovnia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/gusak.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/hican.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/hit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/hriplovec.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/ivarovskaya.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/ivchenko.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/kasenkina.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/kerekelica.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/olhovsky.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/postny.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/rastorgueva.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/selevko.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/semeikina.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/shakirova.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/shpak.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/skidan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/strelchenko.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/susla.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/tkachenko.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/trach.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/trush.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/varankin.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/zarickaia.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/teachers/zarickiy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/tp_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/tp_btn2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ua_aa.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/ukraine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/utb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/videos/bg-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/visa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/vka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/xx.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/zaglushka.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/zamok1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tpl_img/zamok2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="1XU5Vrersk86Ojmdp0xm2rPg9tY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP&#10;HTML&#10;JavaScript" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="ts.external.directory.path" value="C:\Users\ItachiNight\PhpstormProjects\thematic\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ItachiNight\PhpstormProjects\thematic\src\components\icons" />
+      <recent name="C:\Users\ItachiNight\PhpstormProjects\thematic\src" />
+      <recent name="C:\Users\ItachiNight\PhpstormProjects\thematic\src\css" />
+      <recent name="C:\Users\ItachiNight\PhpstormProjects\thematic\tpl_css" />
+      <recent name="C:\Users\ItachiNight\PhpstormProjects\thematic\src\interfaces" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ItachiNight\PhpstormProjects\thematic\public\css" />
+      <recent name="C:\Users\ItachiNight\PhpstormProjects\thematic\src\components\icons" />
+      <recent name="C:\Users\ItachiNight\PhpstormProjects\thematic\src\components" />
+      <recent name="C:\Users\ItachiNight\PhpstormProjects\thematic" />
+      <recent name="C:\Users\ItachiNight\PhpstormProjects\thematic\tpl_css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.build">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8934a64b-86aa-4aa8-b540-55e78f8987ae" name="Default Changelist" comment="" />
+      <created>1581087858271</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581087858271</updated>
+      <workItem from="1581087860472" duration="8781000" />
+      <workItem from="1581102699829" duration="9033000" />
+      <workItem from="1581334541083" duration="5559000" />
+      <workItem from="1581341893511" duration="14373000" />
+      <workItem from="1581419506218" duration="22881000" />
+      <workItem from="1581456021541" duration="3816000" />
+      <workItem from="1581519294869" duration="11267000" />
+      <workItem from="1581587334562" duration="16459000" />
+      <workItem from="1581677942590" duration="13440000" />
+      <workItem from="1581878388756" duration="58000" />
+      <workItem from="1581940639098" duration="19277000" />
+      <workItem from="1582028434142" duration="5580000" />
+      <workItem from="1582035186604" duration="6988000" />
+      <workItem from="1582117759010" duration="13792000" />
+      <workItem from="1582197583733" duration="20197000" />
+      <workItem from="1582238448335" duration="1456000" />
+      <workItem from="1582278860402" duration="17785000" />
+      <workItem from="1582544130132" duration="12825000" />
+      <workItem from="1582617860740" duration="3477000" />
+      <workItem from="1582622009019" duration="22779000" />
+      <workItem from="1582753287365" duration="1041000" />
+      <workItem from="1582755313023" duration="92000" />
+      <workItem from="1583149315686" duration="4057000" />
+      <workItem from="1583325685091" duration="26308000" />
+      <workItem from="1583430062358" duration="2899000" />
+      <workItem from="1583496381251" duration="15356000" />
+      <workItem from="1583784138920" duration="22922000" />
+      <workItem from="1583927454638" duration="17402000" />
+      <workItem from="1584006510271" duration="19038000" />
+      <workItem from="1584095568299" duration="4842000" />
+      <workItem from="1584100759515" duration="20036000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="40" key="#PHP" timestamp="1582301103901">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="40" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1582301103901" />
+    <state x="361" y="40" key="#TypeScript" timestamp="1583932912356">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="40" key="#TypeScript/0.0.1536.824@0.0.1536.824" timestamp="1583932912356" />
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser" timestamp="1582562166753">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="129" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582562166753" />
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581345964366">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="160" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1581345964366" />
+    <state x="512" y="263" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1581090677106">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="512" y="263" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1581090677106" />
+    <state x="391" y="0" key="CommitChangelistDialog2" timestamp="1584137550843">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="391" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584137550843" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1581433581525">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581433581525" />
+    <state width="1493" height="154" key="GridCell.Tab.0.bottom" timestamp="1584135812486">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="154" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584135812486" />
+    <state width="1493" height="154" key="GridCell.Tab.0.center" timestamp="1584135812486">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="154" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584135812486" />
+    <state width="1493" height="154" key="GridCell.Tab.0.left" timestamp="1584135812486">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="154" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584135812486" />
+    <state width="1493" height="154" key="GridCell.Tab.0.right" timestamp="1584135812486">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="154" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584135812486" />
+    <state x="349" y="147" key="IDE.errors.dialog" timestamp="1583333644982">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="147" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1583333644982" />
+    <state x="400" y="212" key="StringManipulation.SortTypeDialog" timestamp="1583501588055">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="400" y="212" key="StringManipulation.SortTypeDialog/0.0.1536.824@0.0.1536.824" timestamp="1583501588055" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1584137589021">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584137589021" />
+    <state x="453" y="148" width="759" height="598" key="find.popup" timestamp="1582130013626">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="453" y="148" width="759" height="598" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1582130013626" />
+    <state x="510" y="38" key="refactoring.ChangeSignatureDialog" timestamp="1581949605928">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="510" y="38" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1581949605928" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1584097236397">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1584097236397" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1584118478739">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584118478739" />
   </component>
 </project>
