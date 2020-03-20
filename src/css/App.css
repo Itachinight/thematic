@@ -710,6 +710,10 @@ a.main-link .status__item--verbal ~ .name:hover {
     height: 35px;
 }
 
+.progress-icon--test {
+    height: 40px;
+}
+
 .info-container {
     display: flex;
     justify-content: space-between;
