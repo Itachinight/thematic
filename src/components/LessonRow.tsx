@@ -5,13 +5,8 @@ import MarksContainer from './MarksContainer';
 import {HwStatus, Lesson} from '../interfaces';
 
 class LessonRow extends Component<Lesson, {}> {
-    private readonly lessonDate: Moment;
-
-    constructor(props: Readonly<Lesson>) {
-        super(props);
-        LessonRow.contextType = GlobalContext;
-        this.lessonDate = moment(props.date);
-    }
+    static contextType = GlobalContext;
+    private readonly lessonDate: Moment = moment(this.props.date);
 
     render(): ReactElement {
         const {
@@ -111,7 +106,7 @@ class LessonRow extends Component<Lesson, {}> {
                             className="main-link"
                             target="_blank"
                             rel="noopener noreferrer"
-                            href={`https://online-shkola.com.ua/lessons/watch.php?id=${id}`}
+                            href={`/lessons/watch.php?id=${id}`}
                         >
                             {lessonBadgeName}
                         </a> :

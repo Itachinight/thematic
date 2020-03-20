@@ -42,9 +42,9 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "cover 97%",
+      "not op_mini all",
+      "ie > 10"
     ],
     "development": [
       "last 2 chrome version",
