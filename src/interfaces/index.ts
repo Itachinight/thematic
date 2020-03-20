@@ -14,6 +14,7 @@ export interface UserData {
     class: number
     eduType: EduType
     isLocked: boolean
+    isCourse: boolean
     paymentEndDate: string
     startLearningDate: string
 }
@@ -44,8 +45,16 @@ export interface Archive {
     value: null | ArchiveYear
 }
 
+export type CourseData = {
+    isCourse: false
+} | {
+    isCourse: true
+    isCourseDateShown: boolean
+}
+
 interface CommonThematicState {
     isLoaded: boolean
+    course: CourseData
     lang: Lang
     subjects: Subject[]
     selectedSubject: Subject
@@ -146,6 +155,7 @@ export type Homework = {
 type EditMarkFunc = (lessonTheme: string, journalId: number, mark: number) => Promise<number>
 
 export interface GlobalContextInterface {
+    course: CourseData
     dateStartLearning: Moment
     today: Moment
     selectedUserId: number
@@ -235,8 +245,7 @@ export interface SelectedUserInfoProps {
     eduType: EduType
 }
 
-export type EduType =  1 | 2 | 3;
-
+export type EduType =  0 | 1 | 2 | 3;
 
 export interface ThemeMarkEditorProps {
     id: number

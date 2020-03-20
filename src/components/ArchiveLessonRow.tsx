@@ -5,13 +5,7 @@ import {Lesson} from '../interfaces';
 import MarksPopUp from "./MarksPopUp";
 
 class ArchiveLessonRow extends Component<Lesson, {}> {
-    private readonly lessonDate: Moment;
-
-    constructor(props: Readonly<Lesson>) {
-        super(props);
-        ArchiveLessonRow.contextType = globalContext;
-        this.lessonDate = moment(props.date);
-    }
+    static contextType = globalContext;
 
     render(): ReactElement {
         const {
@@ -27,13 +21,15 @@ class ArchiveLessonRow extends Component<Lesson, {}> {
             hw,
         } = this.props;
 
+        const lessonDate: Moment = moment(this.props.date);
+
         let totalMark = null;
 
         if (!isSickLeave && journalId !== null) {
             totalMark = Number(testMark) + Number(hw.mark);
         }
 
-        const notEvaluated = this.lessonDate.isBefore(this.context.dateStartLearning);
+        const notEvaluated = lessonDate.isBefore(this.context.dateStartLearning);
 
         let trClassNames = [
             'timetable__row'
@@ -83,7 +79,7 @@ class ArchiveLessonRow extends Component<Lesson, {}> {
                 </td>
                 <td className="timetable__cell date-container">
                     <span>
-                        {this.lessonDate.locale(this.context.lang).format('D MMM YYYY')}
+                        {lessonDate.format('D MMM YYYY')}
                     </span>
                 </td>
                 <td className="timetable__cell question-container">

@@ -36,7 +36,7 @@ class SelectControls extends Component<SelectControlsProps, any> {
                         }}
                     />
                     }
-                    {this.props.users.length &&
+                    {this.props.users.length > 0 &&
                     <Select
                         options={this.props.users}
                         value={this.props.selectedUser}
@@ -44,7 +44,7 @@ class SelectControls extends Component<SelectControlsProps, any> {
                         isSearchable={true}
                         isClearable={false}
                         classNamePrefix={'react-select'}
-                        getOptionLabel={({name, id}) => id === 0 ? '' : `#${id} ${name}`}
+                        getOptionLabel={({name, id}) => id === 0 ? this.context.translation.search : `#${id} ${name}`}
                         getOptionValue={(option: User) => `${option.id}`}
                         loadingMessage={() => this.context.loading}
                         filterOption={({data}, input: string) => {
@@ -84,7 +84,7 @@ class SelectControls extends Component<SelectControlsProps, any> {
                         isSearchable={false}
                         isClearable={false}
                         classNamePrefix={'react-select'}
-                        getOptionLabel={({name}) => name}
+                        getOptionLabel={({name, id}) => id === 0 ? this.context.translation.subjects : name}
                         getOptionValue={({id}) => `${id}`}
                         loadingMessage={() => this.context.loading}
                         styles={SelectControls.defaultStyles}

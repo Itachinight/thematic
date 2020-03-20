@@ -36,9 +36,11 @@ class ThemeTable extends Component<Theme, ThemeTableState> {
             lessons
         } = this.props;
         const {
+            course,
             level,
             translation
         } = this.context;
+        const {isCourse} = course;
 
         const progressBackgroundStyle = visitPercentage !== null ?
             `linear-gradient(to right, #e4f2ff ${visitPercentage}%, #fdfdff ${visitPercentage}.5%)` :
@@ -51,19 +53,19 @@ class ThemeTable extends Component<Theme, ThemeTableState> {
                         onClick={this.handleClick}
                         style={{
                             background: progressBackgroundStyle,
-                            outlineColor: mark !== null ? '#006dce' : '#787878'
+                            outlineColor: !isCourse && mark !== null ? '#006dce' : '#787878'
                         }}
-                        className={mark === null ? 'theme-not-evaluated' : ''}
+                        className= {!isCourse && mark === null ? 'theme-not-evaluated' : ''}
                     >
                     <tr>
                         <th className="timetable__cell">
                             <ThemeOpenSvg
-                                color={mark === null ? '#757575' : '#006dce'}
+                                color={!isCourse && mark === null ? '#757575' : '#006dce'}
                                 opened={this.state.opened}
                             />
                         </th>
                         <th
-                            className={`timetable__cell${mark === null ? ' theme-not-evaluated' : ''}`}
+                            className={`timetable__cell${!isCourse && mark === null ? ' theme-not-evaluated' : ''}`}
                             colSpan={2}
                         >
                             <span>
@@ -98,12 +100,12 @@ class ThemeTable extends Component<Theme, ThemeTableState> {
                                 {translation.thematicMark}:
                             </td>
                             <td className="timetable__cell">
-                                {level !== 4 &&
+                                {!isCourse && level !== 4 &&
                                     <span className="thematic-mark">
                                         {isRedacted && level === 2 ? `${mark} (р.)` : mark}
                                     </span>
                                 }
-                                {level === 4 &&
+                                {!isCourse && level === 4 &&
                                     <ThemeMarkEditor
                                         id={this.props.id}
                                         title={this.props.title}

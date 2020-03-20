@@ -120,11 +120,13 @@ class LessonRow extends Component<Lesson, {}> {
                         </span>
                     }
                 </td>
+                {(!this.context.course.isCourse || this.context.course.isCourseDateShown) &&
                 <td className="timetable__cell date-container">
                     <span>
-                        {this.lessonDate.locale(this.context.lang).format('D MMM YYYY')}
+                        {(this.context.course.isCourse && this.context.level === 1) || this.lessonDate.format('D MMM YYYY')}
                     </span>
                 </td>
+                }
                 <td className="timetable__cell question-container">
                     {isActive &&
                     <MarksContainer

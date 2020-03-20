@@ -1,8 +1,6 @@
 import React, {Component, ReactElement} from 'react';
 import Modal from 'react-modal';
 import moment from 'moment';
-import 'moment/locale/ru';
-import 'moment/locale/uk';
 import GlobalContext from './components/GlobalContext';
 import ThemeTable from './components/ThemeTable';
 import SubjectProgressBars from './components/SubjectProgressBars';
@@ -12,7 +10,7 @@ import {ActionMeta, ValueType} from 'react-select/src/types';
 import {
     Archive,
     ArchiveYear,
-    Class,
+    Class, CourseData,
     HwStatus,
     Lesson,
     Subject,
@@ -44,10 +42,17 @@ import SelectControls from "./components/SelectControls";
 import {getLang} from "./helpers";
 import SelectedUserInfo from "./components/SelectedUserInfo";
 
-class App extends Component<{}, ThematicState> {
+class Journal extends Component<{}, ThematicState> {
+    private today = moment();
+    private lang = getLang();
+    private translation = getTranslation(this.lang);
+
     readonly state: ThematicState = {
         isLoaded: false,
-        lang: getLang(),
+        course: {
+            isCourse: false
+        },
+        lang: this.lang,
         dateStartLearning: '2000-01-01',
         visitedPercentage: 0,
         doneHwPercentage: 0,
@@ -67,8 +72,8 @@ class App extends Component<{}, ThematicState> {
         target: 'current',
         level: 1,
         selectedUser: {
-            name: '',
             id: 0,
+            name: '',
             eduType: 1,
             paymentEndDate: '',
             startLearningDate: '',
@@ -88,9 +93,6 @@ class App extends Component<{}, ThematicState> {
         },
         mark: 0
     };
-
-    private today = moment();
-    private translation = getTranslation(this.state.lang);
 
     handleArchiveChange = async (value: ValueType<Archive>, action: ActionMeta): Promise<void> => {
         if (action.action === 'select-option') {
@@ -138,6 +140,7 @@ class App extends Component<{}, ThematicState> {
 
                 this.setState((prevState: ThematicState) => {
                     const {
+                        course,
                         lang,
                         level,
                         users,
@@ -163,6 +166,7 @@ class App extends Component<{}, ThematicState> {
                         classes,
                         selectedClass,
                         level,
+                        course,
                         isLoaded: true
                     }
                 });
@@ -252,8 +256,22 @@ class App extends Component<{}, ThematicState> {
 
     async componentDidMount(): Promise<void> {
         const userData = await getUserData();
-        const {id, level, name, surname, eduType, isLocked, paymentEndDate, startLearningDate} = userData;
-        const classNum = userData.class;
+        const {
+            id,
+            level,
+            name,
+            surname,
+            eduType,
+            isLocked,
+            isCourse,
+            paymentEndDate,
+            startLearningDate,
+            class: classNum
+        } = userData;
+
+        const course: CourseData = isCourse ?
+            {isCourse: true, isCourseDateShown: true} :
+            {isCourse: false};
 
         switch (level) {
             case 1: {
@@ -290,7 +308,17 @@ class App extends Component<{}, ThematicState> {
                         classes: [],
                         modalOpened: false,
                         modalData,
+                        course,
                         isLoaded: true
+                    }
+                }, () => {
+                    if (this.state.course.isCourse) {
+                        this.setState({
+                            course: {
+                                isCourse: true,
+                                isCourseDateShown: this.isCourseDateShown()
+                            }
+                        })
                     }
                 });
                 break;
@@ -316,6 +344,7 @@ class App extends Component<{}, ThematicState> {
                         classes,
                         selectedClass,
                         level,
+                        course,
                         isLoaded: true
                     }
                 });
@@ -454,6 +483,22 @@ class App extends Component<{}, ThematicState> {
         })
     };
 
+    isCourseDateShown(): boolean {
+        if (!this.state.course.isCourse) {
+            return true;
+        }
+
+        for (const {lessons} of this.state.themes) {
+            for (const {date} of lessons) {
+                if (moment(date).isAfter(this.today)) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
     render(): ReactElement {
         let themesList;
 
@@ -467,11 +512,11 @@ class App extends Component<{}, ThematicState> {
             ))
         }
 
-
         return (
             <div className="theme-wrapper">
                 <GlobalContext.Provider value={{
-                    dateStartLearning: moment(this.state.dateStartLearning).locale(this.state.lang),
+                    course: this.state.course,
+                    dateStartLearning: moment(this.state.dateStartLearning),
                     today: this.today,
                     selectedUserId: this.state.selectedUser.id,
                     lang: this.state.lang,
@@ -509,7 +554,7 @@ class App extends Component<{}, ThematicState> {
                             handleUserChange={this.handleUserChange}
                             isLoaded={this.state.isLoaded}
                         />
-                        {this.state.target === 'current' &&
+                        {this.state.target === 'current' && !this.state.course.isCourse &&
                         <SubjectProgressBars
                             visitedPercentage={this.state.visitedPercentage}
                             doneHwPercentage={this.state.doneHwPercentage}
@@ -567,4 +612,4 @@ class App extends Component<{}, ThematicState> {
     }
 }
 
-export default App;
+export default Journal;

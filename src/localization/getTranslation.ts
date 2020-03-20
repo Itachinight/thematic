@@ -2,12 +2,15 @@ function getTranslation(lang = 'ru') {
     switch (lang) {
         case 'ua':
             return {
+                search: 'Пошук',
+                subjects: 'Предмети',
                 partialEducation: 'Часткова Освіта',
                 additionalEducation: 'Додаткова Освіта',
                 mainEducation: 'Основна Освіта',
+                notSetEducation: 'Тип Не Встановлений',
                 payed: 'Оплачений',
                 noPayment: 'Не оплачений',
-                noStartLearningDate: 'Немає даты зарахування',
+                noStartLearningDate: 'Немає дати зарахування',
                 startedLearning: 'Зарахован',
                 changeTestMark: 'Змінити оцінку за тестове ДЗ на',
                 changeHwMark: 'Змінити оцінку за творче ДЗ на',
@@ -34,9 +37,12 @@ function getTranslation(lang = 'ru') {
         case 'ru':
         default:
             return {
+                search: 'Поиск',
+                subjects: 'Предметы',
                 partialEducation: 'Частичное Образование',
                 additionalEducation: 'Дополнительное Образование',
                 mainEducation: 'Основное Образование',
+                notSetEducation: 'Тип Не Установлен',
                 payed: 'Оплачен',
                 noPayment: 'Не оплачен',
                 noStartLearningDate: 'Нет даты зачисления',

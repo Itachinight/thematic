@@ -3,7 +3,10 @@ import moment from 'moment';
 import {GlobalContextInterface} from '../interfaces';
 
 const defaultContext: GlobalContextInterface = {
-    dateStartLearning: moment('2000-01-01'),
+    course: {
+        isCourse: false
+    },
+    dateStartLearning: moment('0000-00-00'),
     selectedUserId: 0,
     today: moment(),
     lang: 'ru',

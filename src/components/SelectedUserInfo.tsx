@@ -3,7 +3,7 @@ import GlobalContext from './GlobalContext';
 import {SelectedUserInfoProps} from '../interfaces';
 
 const SelectedUserInfo: FC<SelectedUserInfoProps> = (props: SelectedUserInfoProps) => {
-    const {translation, lang, today} = useContext(GlobalContext);
+    const {translation, today} = useContext(GlobalContext);
     const {userId, userName, paymentEndDate, startLearningDate, eduType} = props;
 
     let eduTypeName: string;
@@ -16,8 +16,11 @@ const SelectedUserInfo: FC<SelectedUserInfoProps> = (props: SelectedUserInfoProp
             eduTypeName = translation.additionalEducation;
             break;
         case 1:
-        default:
             eduTypeName = translation.mainEducation;
+            break;
+        case 0:
+        default:
+            eduTypeName = translation.notSetEducation;
     }
 
     return (
@@ -37,7 +40,7 @@ const SelectedUserInfo: FC<SelectedUserInfoProps> = (props: SelectedUserInfoProp
             <span>
                 {
                     startLearningDate.isValid() ?
-                        `${translation.startedLearning} ${startLearningDate.locale(lang).format('DD MMMM YYYY')}` :
+                        `${translation.startedLearning} ${startLearningDate.format('DD MMMM YYYY')}` :
                         translation.noStartLearningDate
                 }
             </span>

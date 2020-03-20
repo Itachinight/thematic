@@ -1,5 +1,7 @@
+import 'whatwg-fetch';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Journal from './Journal';
+import './helpers/momentLocaleSetup';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Journal/>, document.getElementById('root'));
