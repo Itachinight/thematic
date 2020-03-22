@@ -48,9 +48,11 @@ a.main-link {
     color: rgb(80, 80, 80);
 }
 
+
+/* Duplicate from common.css, only padding is different */
 .page-title--thematic {
     background: #ebebeb;
-    padding: 20px 0 0;
+    padding: 20px 0 10px;
     text-align: center;
     font-size: 18px;
     text-transform: uppercase;
@@ -111,43 +113,45 @@ a.calendar-link {
     font-size: 18px;
 }
 
+/*not used*/
+
 /*Стили фильтров - совпадают со стилями фильтров в parentstats - при объединении удалить, если не переопределены некоторые из них*/
-.archieve-filters {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
-}
+/*.archieve-filters {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    margin: 20px 0;*/
+/*}*/
 
-.filters__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
-    align-items: flex-start;
-    margin-right: 20px;
-}
+/*.filters__item {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: stretch;*/
+/*    align-items: flex-start;*/
+/*    margin-right: 20px;*/
+/*}*/
 
-.filters__item__title {
-    margin-bottom: 10px;
-}
+/*.filters__item__title {*/
+/*    margin-bottom: 10px;*/
+/*}*/
 
-.filters__item__input {
-    width: auto;
-    padding: 7px;
-    border-color: #ebebeb;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-}
+/*.filters__item__input {*/
+/*    width: auto;*/
+/*    padding: 7px;*/
+/*    border-color: #ebebeb;*/
+/*    border-width: 1px;*/
+/*    border-style: solid;*/
+/*    border-radius: 5px;*/
+/*}*/
 
-.filters__item__input[type="search"] {
-    width: 50%;
-}
+/*.filters__item__input[type="search"] {*/
+/*    width: 50%;*/
+/*}*/
 
-.diary-mark {
-    position: relative;
-    vertical-align: middle;
-}
+/*.diary-mark {*/
+/*    position: relative;*/
+/*    vertical-align: middle;*/
+/*}*/
 
 .tooltip-marks {
     position: absolute;
@@ -879,43 +883,8 @@ th.timetable__cell[colspan] {
 
 tbody {
     display: block;
-    /*overflow: hidden;*/
-    /*transition: max-height 750ms ease;*/
-    /*will-change: transition;*/
-    /*max-height: 0;*/
     margin-top: 2px;
 }
-
-/*tbody tr td * {*/
-/*    transition: opacity 300ms linear 300ms;*/
-/*    opacity: 0;*/
-/*}*/
-
-/*tbody.height-enter-active tr td *,*/
-/*tbody.height-enter-done tr td * {*/
-/*    opacity: 1;*/
-/*}*/
-
-/*tbody.height-enter {*/
-/*    max-height: 0;*/
-/*    margin-top: 2px;*/
-/*}*/
-
-/*tbody.height-enter-active {*/
-/*    max-height: 800px;*/
-/*}*/
-
-/*tbody.height-enter-done {*/
-/*    max-height: 800px;*/
-/*    margin-top: 2px;*/
-/*    overflow: visible;*/
-/*}*/
-
-/*tbody.height-exit,*/
-/*tbody.height-exit-active {*/
-/*    max-height: 0;*/
-/*    margin-top: 2px;*/
-/*}*/
 
 tbody tr {
     display: flex;
