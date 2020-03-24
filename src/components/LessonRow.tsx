@@ -118,7 +118,13 @@ class LessonRow extends Component<Lesson, {}> {
                 {(!this.context.course.isCourse || this.context.course.isCourseDateShown) &&
                 <td className="timetable__cell date-container">
                     <span>
-                        {(this.context.course.isCourse && this.context.level === 1) || this.lessonDate.format('D MMM YYYY')}
+                        {!this.context.course.isCourse ?
+                            this.lessonDate.format('D MMM YYYY') :
+                            (this.context.course.isCourse && this.context.level === 1 ?
+                                (isActive ? '' : this.lessonDate.fromNow()) :
+                                this.lessonDate.format('D MMM YYYY')
+                            )
+                        }
                     </span>
                 </td>
                 }

@@ -226,6 +226,9 @@ class Journal extends Component<{}, ThematicState> {
                 ...prev,
                 ...data,
                 subjects: subjects ?? prev.subjects,
+                course: prev.course.isCourse ?
+                    {isCourse: true, isCourseDateShown: this.isCourseDateShown(data.themes)} :
+                    prev.course,
                 selectedSubject,
                 selectedArchive,
                 target,
@@ -280,6 +283,10 @@ class Journal extends Component<{}, ThematicState> {
                 const data: ThematicInfo = await loadThematicData(id, selectedSubject.id);
                 const {archives} = await ky(`/api/v2/users/${id}/thematic/archive/years`).json();
 
+                if (course.isCourse) {
+                    course.isCourseDateShown = this.isCourseDateShown(data.themes);
+                }
+
                 this.setState((prevState: ThematicState) => {
                     const {lang, modalData} = prevState as ThematicCurrentState;
 
@@ -310,15 +317,6 @@ class Journal extends Component<{}, ThematicState> {
                         modalData,
                         course,
                         isLoaded: true
-                    }
-                }, () => {
-                    if (this.state.course.isCourse) {
-                        this.setState({
-                            course: {
-                                isCourse: true,
-                                isCourseDateShown: this.isCourseDateShown()
-                            }
-                        })
                     }
                 });
                 break;
@@ -483,12 +481,8 @@ class Journal extends Component<{}, ThematicState> {
         })
     };
 
-    isCourseDateShown(): boolean {
-        if (!this.state.course.isCourse) {
-            return true;
-        }
-
-        for (const {lessons} of this.state.themes) {
+    isCourseDateShown(themes: Theme[]): boolean {
+        for (const {lessons} of themes) {
             for (const {date} of lessons) {
                 if (moment(date).isAfter(this.today)) {
                     return true;
